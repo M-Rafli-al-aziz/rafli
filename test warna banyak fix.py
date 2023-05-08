@@ -16,6 +16,7 @@ upper_yellow=np.array([30,255,255])
 while True:
     ret,frame=cap.read()
     frame=cv2.resize(frame,(640,480))
+    #frame=cv2.resize(frame,(320,300))
     hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
     
     # detect warna merah
